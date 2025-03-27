@@ -12,6 +12,8 @@ model = genai.GenerativeModel('gemini-2.0-flash')
 def analyze_skills(user_input):
     try:
         prompt = f"""
+        if any communicational words like hi hello are used respond like usually you do like a normal bot 
+        if any skill based or etc is used run this one ->
         Analyze the user's input: "{user_input}"
         Identify their top 3 skills and suggest 3 career paths.
         Format the response as a bulleted list.
@@ -128,6 +130,7 @@ if user_input or uploaded_file:
         course_list = "\n".join([f"- [{course.get('title', 'N/A')}]({course.get('url', '#')})" for course in courses[:3]]) if courses else "No courses found"
 
         response = f"""
+        if hello or like communication words used give normal respone like hi else run below one->
         ### Analysis Results:
         {analysis}
 
