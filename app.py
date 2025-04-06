@@ -85,8 +85,8 @@ def show_intro():
     team_cols = st.columns(3)
     team = [
         ("Pavan", "12305446", "ML Engineer"),
-        ("Sakshi", "12306499", "Data Scientist"),
-        ("Kausar", "12316343", "Full-Stack Developer")
+        ("Sakshi", "12306499", "ML Engineer"),
+        ("Kausar", "12316343", "ML Engineer")
     ]
     
     for idx, (name, id, role) in enumerate(team):
